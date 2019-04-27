@@ -1,6 +1,33 @@
-<div style="text-align:center">
+<div class="root">
   <h1>
     Welcome to {{ title }}!
   </h1>
-</div>
 
+  <div class="color-input">
+    <div class="color-label">
+      Color
+    </div>
+    <div class="color-select">
+      <div class="hex" [ngStyle]="{'color': colorToHex()}">#</div>
+      <input #colorInput class="color-select-input" [(ngModel)]="color" (input)="onColorChange($event.target.value)">
+    </div>
+  </div>
+
+  <div class="rgb-input">
+    <div class="r-input">
+      <div>R</div>
+      <input class="input-range" type="range" min="0" max="255" color="#000000" value="145">
+      <input color="#000000" value="145">
+    </div>
+    <div class="g-input">
+      <div>G</div>
+      <input class="input-range" type="range" min="0" max="255" color="#000000" value="145">
+      <input color="#000000" value="145">
+    </div>
+    <div class="b-input">
+      <div>B</div>
+      <input class="input-range" type="range" min="0" max="255" color="#000000" value="145">
+      <input color="#000000" value="145">
+    </div>
+  </div>
+</div>

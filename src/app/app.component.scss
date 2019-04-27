@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  .color-input {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    
+    .color-select {
+      display: flex;
+      padding-left: 10px;
+      outline: none;
+
+      .hex {
+        padding-right: 10px;
+      }
+      .color-select-input {
+        outline: none;
+      }
+    }
+  }
+
+  .rgb-input {
+    .r-input,
+    .g-input,
+    .b-input {
+      display: flex;
+      flex-direction: row;
+      .input-range {
+        margin-left: 10px;
+        margin-right: 10px;
+        outline: none;
+      }
+    }
+  }
+}
