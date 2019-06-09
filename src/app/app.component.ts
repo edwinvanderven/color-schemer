@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  @ViewChild('colorInput') colorInput: ElementRef;
+  @ViewChild('colorInput', { static: true }) colorInput: ElementRef;
 
   public title = 'color-schemer';
   public color = '000000';
