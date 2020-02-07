@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "color-schemer"
+  "defaultProject": "color-schemer",
+  "cli": {
+    "analytics": "fab66321-ace8-4bb5-a1b0-febe302bc162"
+  }
 }
